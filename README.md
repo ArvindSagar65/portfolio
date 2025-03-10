@@ -3,7 +3,7 @@
 Welcome to my **personal portfolio** website! This project showcases my skills, projects, and experience in **web development** with a sleek and interactive design.
 
 ## 🌐 Live Demo
-[Check it out here!](https://aravindassignment.netlify.app/)
+[Check it out here!](https://portfolio-tan-two-37.vercel.app/)
 
 ## 🛠 Tech Stack
 - **Frontend:** React, Tailwind CSS
