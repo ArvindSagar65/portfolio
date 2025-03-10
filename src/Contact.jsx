@@ -49,9 +49,9 @@ function Contact() {
       {/* Social Media Icons */}
       <div className="mt-8 flex gap-6">
         {[
-          { href: "https://github.com/yourgithub", icon: <FaGithub />, color: "text-white" },
-          { href: "https://linkedin.com/in/yourlinkedin", icon: <FaLinkedin />, color: "text-blue-400" },
-          { href: "https://twitter.com/yourtwitter", icon: <FaTwitter />, color: "text-blue-500" },
+          { href: "https://github.com/ArvindSagar65", icon: <FaGithub />, color: "text-white" },
+          { href: "https://www.linkedin.com/in/arvind-sagar-a03162293/", icon: <FaLinkedin />, color: "text-blue-400" },
+          { href: "https://x.com/MoistMa06863744", icon: <FaTwitter />, color: "text-blue-500" },
         ].map(({ href, icon, color }, index) => (
           <motion.a
             key={index}
