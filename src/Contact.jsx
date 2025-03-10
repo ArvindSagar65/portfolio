@@ -79,15 +79,24 @@ function Contact() {
         <FaDownload /> Download Resume
       </motion.a>
 
-      {/* Empty Blog Section */}
+      {/* Blog Section */}
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="w-full max-w-4xl mt-12 p-6 bg-black bg-opacity-30 rounded-lg"
+        className="w-full max-w-4xl mt-12 p-6 bg-gray-900 bg-opacity-90 rounded-lg border border-gray-700 shadow-lg"
       >
         <h3 className="text-3xl font-bold text-blue-300 mb-4">Latest Blog Posts</h3>
-        <div className="space-y-4">{/* Empty for now */}</div>
+        <div className="space-y-4">
+          <div className="bg-gray-800 p-4 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold text-white">🚀 Exploring the Cosmos of Web Dev</h4>
+            <p className="text-gray-300">A journey into the latest web technologies and best practices.</p>
+          </div>
+          <div className="bg-gray-800 p-4 rounded-lg shadow-md">
+            <h4 className="text-xl font-semibold text-white">🎨 Designing for the Future</h4>
+            <p className="text-gray-300">How design trends are evolving in 2025 and beyond.</p>
+          </div>
+        </div>
       </motion.div>
     </section>
   );

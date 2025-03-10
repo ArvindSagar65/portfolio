@@ -5,6 +5,7 @@ import { Pie } from "react-chartjs-2";
 import "chart.js/auto";
 import { FaReact, FaAws, FaPython, FaJava, FaJs, FaNodeJs, FaArrowUp } from "react-icons/fa";
 import { SiTailwindcss, SiDjango } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const techStack = [
   { icon: <FaReact className="text-blue-400" />, name: "React", description: "A JavaScript library for building UIs." },
@@ -48,7 +49,20 @@ const About = () => {
   };
 
   return (
-    <div id="about" className="min-h-screen flex flex-col items-center justify-center px-6 md:px-20 py-10 bg-black text-white w-full">
+    <div id="about" className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-20 py-10 bg-black text-white w-full overflow-hidden">
+      {/* Stars Falling Effect */}
+      <div className="absolute inset-0 w-full h-full pointer-events-none">
+        {[...Array(50)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-2 bg-white rounded-full opacity-80"
+            style={{ top: `${Math.random() * 100}%`, left: `${Math.random() * 100}%` }}
+            animate={{ y: [0, 1000], opacity: [1, 0] }}
+            transition={{ duration: Math.random() * 5 + 2, repeat: Infinity, ease: "linear" }}
+          />
+        ))}
+      </div>
+
       <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl gap-10">
         <div className="text-center md:text-left max-w-xl">
           <p className="text-lg md:text-xl">
